@@ -1,0 +1,24 @@
+﻿{
+ "vocabulary": [
+ { "id": 1, "de": "Hallo", "en": "Hello", "fr": "Bonjour" },
+ { "id": 2, "de": "Tschüss", "en": "Goodbye", "fr": "Au revoir" },
+ { "id": 3, "de": "Danke", "en": "Thank you", "fr": "Merci" },
+ { "id": 4, "de": "Bitte", "en": "Please", "fr": "S'il te plaît" },
+ { "id": 5, "de": "Ja", "en": "Yes", "fr": "Oui" },
+ { "id": 6, "de": "Nein", "en": "No", "fr": "Non" },
+ { "id": 7, "de": "Mann", "en": "Man", "fr": "Homme" },
+ { "id": 8, "de": "Frau", "en": "Woman", "fr": "Femme" },
+ { "id": 9, "de": "Kind", "en": "Child", "fr": "Enfant" },
+ { "id": 10, "de": "Haus", "en": "House", "fr": "Maison" },
+ { "id": 11, "de": "Auto", "en": "Car", "fr": "Voiture" },
+ { "id": 12, "de": "Buch", "en": "Book", "fr": "Livre" },
+ { "id": 13, "de": "Schule", "en": "School", "fr": "École" },
+ { "id": 14, "de": "Lehrer", "en": "Teacher", "fr": "Professeur" },
+ { "id": 15, "de": "Schüler", "en": "Student", "fr": "Élève" },
+ { "id": 16, "de": "Freund", "en": "Friend", "fr": "Ami" },
+ { "id": 17, "de": "Familie", "en": "Family", "fr": "Famille" },
+ { "id": 18, "de": "Essen", "en": "Food", "fr": "Nourriture" },
+ { "id": 19, "de": "Wasser", "en": "Water", "fr": "Eau" },
+ { "id": 20, "de": "Zeit", "en": "Time", "fr": "Temps" }
+ ]
+}

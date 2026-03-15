@@ -1,0 +1,44 @@
+﻿<Window x:Class="Vokabeltrainer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Vokabeltrainer"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <Canvas Height="50">
+                <Label Content="Ausgabe:" Canvas.Left="20" Canvas.Top="12"/>
+                <ComboBox SelectionChanged="output_lan_SelectionChanged" x:Name="output_lan" Canvas.Left="78" Canvas.Top="15" Width="55" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <ComboBoxItem Content="DE" IsSelected="True"></ComboBoxItem>
+                    <ComboBoxItem Content="EN"></ComboBoxItem>
+                    <ComboBoxItem Content="FR"></ComboBoxItem>
+                </ComboBox>
+                <Label Content="Eingabe:" Canvas.Left="150" Canvas.Top="12"/>
+                <ComboBox x:Name="input_lan" Canvas.Left="209" Canvas.Top="15" Width="55" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <ComboBoxItem Content="DE"></ComboBoxItem>
+                    <ComboBoxItem Content="EN" IsSelected="True"></ComboBoxItem>
+                    <ComboBoxItem Content="FR"></ComboBoxItem>
+                </ComboBox>
+                <Button Click="next_voc_button_Click" x:Name="next_voc_button" Canvas.Left="300" Canvas.Top="15" Height="22" Width="100" Content="Nächste"></Button>
+                <Button Click="voc_verwalten_button_Click" x:Name="voc_verwalten_button" Canvas.Left="420" Canvas.Top="15" Height="22" Width="115" Content="Vokabeln verwalten" HorizontalAlignment="Left" VerticalAlignment="Center"></Button>
+                <Button Click="Lösen_Click"  x:Name="Lösen" Content="Lösen" Height="22" Width="64" HorizontalAlignment="Left" Canvas.Left="546" Canvas.Top="15" VerticalAlignment="Top"/>
+                <Button Click="Settngs_Click" x:Name="Settngs" Content="Einstellungen" Canvas.Left="625" Canvas.Top="15" Height="22"/>
+
+            </Canvas>
+            <Canvas x:Name="vok_canvas" Height="383">
+                <Button Click="pruefen_button_Click" x:Name="pruefen_button" Content="Prüfen" Canvas.Left="649" Canvas.Top="10" Height="363" Width="141" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Rectangle x:Name="feedback_bar_outline" Height="330" Canvas.Left="10" Stroke="Black" Canvas.Top="23" Width="25" HorizontalAlignment="Left" VerticalAlignment="Top" RadiusX="10" RadiusY="10"/>
+                <Rectangle x:Name="feedback_bar" Height="330" Canvas.Left="10" Stroke="Black" Canvas.Top="23" Width="25" HorizontalAlignment="Left" VerticalAlignment="Top" RadiusX="10" RadiusY="10"/>
+                <Label Content="Feedback" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Label Content="Antwort:" Canvas.Left="40" Canvas.Top="179"/>
+                <TextBox KeyDown="answer_textbox_KeyDown" x:Name="answer_textbox" Canvas.Left="95" TextWrapping="Wrap" Text="" Canvas.Top="183" Width="452" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Label x:Name="voc_label" Content="" Canvas.Left="95" Canvas.Top="130" Height="44" Width="452" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <Label x:Name="Lösung_lab" Content="" Canvas.Left="200" Canvas.Top="222" Height="63" Width="231"/>
+
+            </Canvas>
+        </StackPanel>
+    </Grid>
+</Window>
